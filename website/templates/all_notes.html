@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content
+    %}
+    <h1 align="center">Все объявления</h1>
+    <ul class="list-group list-group-flush" id="notes">
+      {% for a in user.data %}
+      <li class="list-group-item">
+        {{ note.data }}
+      {% endfor %}
+
+    {% endblock %}
